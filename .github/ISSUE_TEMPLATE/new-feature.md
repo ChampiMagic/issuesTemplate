@@ -15,6 +15,10 @@ assignees: ChampiMagic
 *(if none, delete this section)*
 - name of the packages to be used
 
+## UI to implement
+*(if none, delete this section)*
+add screnshots of the UIs to implement
+
 ## Tasks
 - [ ] first requirement to complete this task
 - [ ] second requirement to complete this task
