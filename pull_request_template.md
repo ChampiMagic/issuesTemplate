@@ -13,6 +13,6 @@ Provide details of the changes you made in this pull request.
 ## Checklist
 
 - [ ] I have tested this code.
-- [ ] I have build an APK/IPA file and tested that all is working
+- [ ] I have build an Production APK/IPA file and tested that all is working.
 - [ ] I have followed the coding style guidelines.
-- [ ] I have tested in a physical device
+- [ ] I have tested in a physical device (production APK/IPA file).
