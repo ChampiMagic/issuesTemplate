@@ -1,0 +1,54 @@
+name: Bug report
+about: Template used to report bugs
+title: --/BR-XXX - Descriptive title
+labels: bug
+assignees: ''
+body:
+  - type: textarea
+    id: problem-to-solve
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+      placeholder: What happened!
+    validations:
+      required: true
+  - type: dropdown
+    id: OS
+    attributes:
+      label: Device
+      description: On which operating system did you experience this problem?
+      options:
+        - Android
+        - iOS
+      default: 0
+    validations:
+      required: true
+  - type: conditional
+    id: conditional-versions
+    attributes:
+      children:
+        - type: dropdown
+          id: android-versions
+          attributes:
+            label: Android Version
+            multiple: true
+            options:
+              - 13
+              - 12
+          validations:
+            required: true
+        - type: dropdown
+          id: ios-versions
+          attributes:
+            label: iOS Version
+            multiple: true
+            options:
+              - 13
+              - 12
+          validations:
+            required: true
+    conditions:
+      - field: OS
+        is: Android
+      - field: OS
+        is: iOS
