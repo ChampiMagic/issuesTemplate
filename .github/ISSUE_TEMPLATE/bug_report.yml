@@ -3,7 +3,7 @@ description: Template used to report bugs
 title: --/BR-XXX - Descriptive title
 labels: bug
 body:
-  - type: input
+  - type: textarea
     id: problem-to-solve
     attributes:
       label: Describe the bug
@@ -47,9 +47,8 @@ body:
       options:
         - Android
         - iOS
-      default: 0
-    validations:
-      required: true
+      validations:
+        required: false 
   - type: dropdown
     id: android-versions
     attributes:
@@ -63,8 +62,6 @@ body:
         - 10
         - 9 (Pie)
         - 8 (Oreo)
-    validations:
-      required: true
   - type: dropdown
     id: ios-versions
     attributes:
@@ -78,9 +75,7 @@ body:
         - 14
         - 13
         - 12
-    validations:
-      required: true
-  - type: input
+  - type: textarea
     id: additional-context
     attributes:
       label: Additional context
