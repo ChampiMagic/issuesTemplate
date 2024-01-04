@@ -1,8 +1,7 @@
 name: Bug report
-about: Template used to report bugs
+description: Template used to report bugs
 title: --/BR-XXX - Descriptive title
 labels: bug
-assignees: ''
 body:
   - type: textarea
     id: problem-to-solve
