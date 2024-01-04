@@ -64,3 +64,10 @@ body:
         - 12
     validations:
       required: true
+  - type: file
+      id: media-upload
+      attributes:
+        label: Media Upload
+        description: Upload relevant media files (screenshots, videos, etc.) to help us understand the issue better.
+      validations:
+        required: false
