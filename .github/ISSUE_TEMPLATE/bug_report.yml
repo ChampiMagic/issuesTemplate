@@ -9,13 +9,12 @@ body:
       label: Describe the bug
       description: A clear and concise description of what the bug is.
       placeholder: What happened!
-      value: "What happened!"
     validations:
       required: true
   - type: dropdown
     id: OS
     attributes:
-      label: Device
+      label: Device OS
       description: On which operating system did you experience this problem?
       options:
         - Android
@@ -27,6 +26,7 @@ body:
     id: android-versions
     attributes:
       label: Android Version
+      description: If your device is android, select a version.
       multiple: true
       options:
         - 13
@@ -41,6 +41,7 @@ body:
     id: ios-versions
     attributes:
       label: iOS Version
+      description: If your device is iOS, select a version.
       multiple: true
       options:
         - 17
