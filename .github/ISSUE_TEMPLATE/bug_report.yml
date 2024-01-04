@@ -1,7 +1,8 @@
 name: Bug report
-description: Template used to report bugs
+about: Template used to report bugs
 title: --/BR-XXX - Descriptive title
 labels: bug
+assignees: ''
 body:
   - type: textarea
     id: problem-to-solve
@@ -22,32 +23,31 @@ body:
       default: 0
     validations:
       required: true
-  - type: conditional
-    id: conditional-versions
+  - type: dropdown
+    id: android-versions
     attributes:
-      children:
-        - type: dropdown
-          id: android-versions
-          attributes:
-            label: Android Version
-            multiple: true
-            options:
-              - 13
-              - 12
-          validations:
-            required: true
-        - type: dropdown
-          id: ios-versions
-          attributes:
-            label: iOS Version
-            multiple: true
-            options:
-              - 13
-              - 12
-          validations:
-            required: true
-    conditions:
-      - field: OS
-        is: Android
-      - field: OS
-        is: iOS
+      label: Android Version
+      multiple: true
+      options:
+        - 13
+        - 12
+        - 11
+        - 10
+        - 9 (Pie)
+        - 8 (Oreo)
+    validations:
+      required: true
+  - type: dropdown
+    id: ios-versions
+    attributes:
+      label: iOS Version
+      multiple: true
+      options:
+        - 17
+        - 16
+        - 15
+        - 14
+        - 13
+        - 12
+    validations:
+      required: true
