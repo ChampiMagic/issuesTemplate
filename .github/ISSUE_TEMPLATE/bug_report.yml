@@ -23,6 +23,14 @@ body:
         4. See error
     validations:
       required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+      placeholder: What is the expected behavior? 
+    validations:
+      required: true
   - type: dropdown
     id: OS
     attributes:
@@ -64,10 +72,10 @@ body:
         - 12
     validations:
       required: true
- - type: file
-   id: media-upload
-   attributes:
-     label: Media Upload
-     description: Upload relevant media files (screenshots, videos, etc.) to help us understand the issue better.
-   validations:
-     required: false
+  - type: file
+    id: media-upload
+    attributes:
+      label: Media Upload
+      description: Upload relevant media files (screenshots, videos, etc.) to help us understand the issue better.
+    validations:
+      required: false
