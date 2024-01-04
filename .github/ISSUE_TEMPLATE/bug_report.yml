@@ -31,6 +31,14 @@ body:
       placeholder: What is the expected behavior? 
     validations:
       required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+      placeholder: Attach an image
+    validations:
+      required: false 
   - type: dropdown
     id: OS
     attributes:
@@ -72,15 +80,10 @@ body:
         - 12
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: additional-context
     attributes:
       label: Additional context
       description: Add any other context about the problem here. If none, leave this field empty.
     validations:
-      required: true
-  - type: markdown
-    attributes:
-      value: |
-        ### Screenshots
-        If applicable, add screenshots to help explain your problem.
+      required: false
