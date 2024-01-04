@@ -3,7 +3,7 @@ description: Template used to report bugs
 title: --/BR-XXX - Descriptive title
 labels: bug
 body:
-  - type: textarea
+  - type: input
     id: problem-to-solve
     attributes:
       label: Describe the bug
